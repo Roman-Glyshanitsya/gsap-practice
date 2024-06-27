@@ -4,13 +4,12 @@ import { TextPlugin } from "gsap/TextPlugin";
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
-gsap.to(".box", {
+gsap.to(".image", {
   duration: 3,
   //   rotation: 360,
-  scale: 4,
+  scale: 2,
   scrollTrigger: {
-    trigger: ".box",
-    markers: true,
+    trigger: ".image",
     scrub: true,
   },
 });
@@ -19,6 +18,6 @@ gsap.to(".title", {
   duration: 2,
   delay: 1,
   text: {
-    value: "be as water, my friend",
+    value: "Escape to Ultimate Relaxation.",
   },
 });
